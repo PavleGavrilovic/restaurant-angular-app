@@ -1,0 +1,18 @@
+<div id="search">
+  <input #input type="text" name="text" id="text">
+  <button (click)="searchMeals(input.value)">Search Meal</button>
+</div>
+<ng-template appSearchedMeal></ng-template>
+<h1>Menu</h1>
+<div id="buttons">
+  <button id="natDish" (click)="getNationalDishes()">National</button>
+  <button (click)="goToAllMeals()">All Meals</button>
+</div>
+<div id="categories" #menu>
+  <div *ngFor="let natDish of nationalDishes">
+    <p (click)="goToNational(natDish.strArea)">{{ natDish.strArea }}</p>
+  </div>
+  <div *ngFor="let category of categories" [hidden]="isHidden">
+    <p (click)="goToCategory(category.strCategory)">{{ category.strCategory }}</p>
+  </div>
+</div>

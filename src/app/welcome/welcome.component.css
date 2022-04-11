@@ -1,0 +1,15 @@
+h1 {
+  font-size: 50px;
+  color: brown;
+  text-align: center;
+}
+
+h1 sup{
+   font-size: 10px;
+ }
+
+
+ h2 {
+  color: brown;
+  text-align: center;
+}

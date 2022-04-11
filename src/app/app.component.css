@@ -1,0 +1,36 @@
+#header {
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/images/2102-Restaurante-Picasso-Hamburg.jpg);
+  background-size: cover;
+}
+
+#menu {
+  background-color: brown;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menu a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+#backButton {
+  cursor: pointer;
+  position: fixed;
+  left: 93%;
+  bottom: 2%;
+  width: 90px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: brown;
+}

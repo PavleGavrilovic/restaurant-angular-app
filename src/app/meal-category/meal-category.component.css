@@ -1,0 +1,97 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+#meal_container {
+  margin-top: 5px;
+}
+
+#meal-details {
+  margin: 5px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 20px auto 70px;
+  font-weight: bolder;
+}
+
+#meal-details p {
+  text-align: center;
+}
+
+.meals {
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 30px auto 60px;
+  border-bottom: 1px solid brown;
+  gap: 0 10px;
+}
+
+
+
+div p {
+  margin: 5px;
+}
+
+.meal-details {
+  margin: 5px;
+  width: 600px;
+  height: fit-content;
+  border: 1px solid brown;
+  color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-details h2 {
+  text-decoration: underline;
+}
+
+.meal-details img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.meal-details p {
+  margin-top: 20px;
+}
+
+.ingredients h3 {
+  text-decoration: underline;
+}
+
+.measure h3 {
+  text-decoration: underline;
+}
+
+.meal_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.meal_content div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions {
+  padding: 20px;
+  text-align: justify;
+}
+
+.instructions h3 {
+  text-align: center;
+  text-decoration: underline;
+}

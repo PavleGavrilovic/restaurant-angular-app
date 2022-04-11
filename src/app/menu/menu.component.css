@@ -1,0 +1,75 @@
+* {
+  color: brown;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline overline;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#categories div {
+  cursor: pointer;
+  margin: 20px;
+  font-size: 25px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: brown;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 40px;
+}
+
+
+#search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+#search input {
+  height: 25px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.searched-meal {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid brown;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.searched-meal img {
+  width: 250px;
+  height: 250px;
+}
+
+.headers h2 {
+  text-decoration: underline;
+}

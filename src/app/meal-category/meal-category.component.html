@@ -1,0 +1,75 @@
+<div id="container">
+  <div id="meal_container">
+    <div id="meal-details">
+      <p>No</p>
+      <p>Name</p>
+      <p>ID</p>
+    </div>
+    <div *ngFor="let meal of meals; let i=index" class="meals" (click)="getMealByIndex(meal.idMeal)">
+      <p>{{ i+1 }}</p>
+      <p>{{ meal.strMeal }}</p>
+      <p>{{ meal.idMeal }}</p>
+    </div>
+  </div>
+  <div *ngFor="let meal of mealById" class="meal-details">
+    <h2>{{ meal.strMeal }}</h2>
+    <h4>{{ meal.strArea }}</h4>
+    <img [src]="meal.strMealThumb" alt="meal_img">
+    <div class="meal_content">
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>{{ meal.strIngredient1 }}</li>
+          <li>{{ meal.strIngredient2 }}</li>
+          <li>{{ meal.strIngredient3 }}</li>
+          <li>{{ meal.strIngredient4 }}</li>
+          <li>{{ meal.strIngredient5 }}</li>
+          <li>{{ meal.strIngredient6 }}</li>
+          <li>{{ meal.strIngredient7 }}</li>
+          <li>{{ meal.strIngredient8 }}</li>
+          <li>{{ meal.strIngredient9 }}</li>
+          <li>{{ meal.strIngredient10 }}</li>
+          <li>{{ meal.strIngredient11 }}</li>
+          <li>{{ meal.strIngredient12 }}</li>
+          <li>{{ meal.strIngredient13 }}</li>
+          <li>{{ meal.strIngredient14 }}</li>
+          <li>{{ meal.strIngredient15 }}</li>
+          <li>{{ meal.strIngredient16 }}</li>
+          <li>{{ meal.strIngredient17 }}</li>
+          <li>{{ meal.strIngredient18 }}</li>
+          <li>{{ meal.strIngredient19 }}</li>
+          <li>{{ meal.strIngredient20 }}</li>
+        </ul>
+      </div>
+      <div class="measure">
+        <h3>Measure</h3>
+        <ul>
+          <li>{{ meal.strMeasure1 }}</li>
+          <li>{{ meal.strMeasure2 }}</li>
+          <li>{{ meal.strMeasure3 }}</li>
+          <li>{{ meal.strMeasure4 }}</li>
+          <li>{{ meal.strMeasure5 }}</li>
+          <li>{{ meal.strMeasure6 }}</li>
+          <li>{{ meal.strMeasure7 }}</li>
+          <li>{{ meal.strMeasure8 }}</li>
+          <li>{{ meal.strMeasure9 }}</li>
+          <li>{{ meal.strMeasure10 }}</li>
+          <li>{{ meal.strMeasure11 }}</li>
+          <li>{{ meal.strMeasure12 }}</li>
+          <li>{{ meal.strMeasure13 }}</li>
+          <li>{{ meal.strMeasure14 }}</li>
+          <li>{{ meal.strMeasure15 }}</li>
+          <li>{{ meal.strMeasure16 }}</li>
+          <li>{{ meal.strMeasure17 }}</li>
+          <li>{{ meal.strMeasure18 }}</li>
+          <li>{{ meal.strMeasure19 }}</li>
+          <li>{{ meal.strMeasure20 }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="instructions">
+      <h3>Instructions</h3>
+      <p>{{ meal.strInstructions }}</p>
+    </div>
+  </div>
+</div>
