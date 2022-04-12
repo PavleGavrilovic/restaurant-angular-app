@@ -11,6 +11,8 @@ import { AllMealsComponent } from './all-meals/all-meals.component';
 import { MealCategoryComponent } from './meal-category/meal-category.component';
 import { SearchedMealDirective } from './directives/searched-meal.directive';
 import { SearchedMealComponent } from './searched-meal/searched-meal.component';
+import { MealTableDirective } from './directives/meal-table.directive';
+import { MealTableComponent } from './meal-table/meal-table.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SearchedMealComponent } from './searched-meal/searched-meal.component';
     AllMealsComponent,
     MealCategoryComponent,
     SearchedMealDirective,
-    SearchedMealComponent
+    SearchedMealComponent,
+    MealTableDirective,
+    MealTableComponent
   ],
   imports: [
     BrowserModule,

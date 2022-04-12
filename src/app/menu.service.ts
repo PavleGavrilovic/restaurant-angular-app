@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { map } from "rxjs";
+import { map, Subject } from "rxjs";
 
 @Injectable({providedIn:'root'})
 export class MenuService {
@@ -8,6 +8,7 @@ export class MenuService {
   id:string;
   dataObjectArray;
   data;
+  activatedEmitter=new Subject<string>();
 
   constructor(private http:HttpClient) {}
 

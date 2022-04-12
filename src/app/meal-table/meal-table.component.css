@@ -1,0 +1,12 @@
+table {
+  border-right: 1px solid brown;
+}
+
+th, td {
+  padding: 10px;
+  margin: 0;
+}
+
+td {
+  cursor: pointer;
+}

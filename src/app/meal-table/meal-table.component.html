@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>No</th>
+    <th>Name</th>
+    <th>ID</th>
+  </tr>
+  <tr *ngFor="let data of mealData" (click)="getMealId(data.id)">
+    <td>{{ data.number }}</td>
+    <td>{{ data.name }}</td>
+    <td>{{ data.id }}</td>
+  </tr>
+</table>

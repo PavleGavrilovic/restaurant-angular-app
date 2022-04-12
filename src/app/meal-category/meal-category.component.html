@@ -1,15 +1,6 @@
 <div id="container">
   <div id="meal_container">
-    <div id="meal-details">
-      <p>No</p>
-      <p>Name</p>
-      <p>ID</p>
-    </div>
-    <div *ngFor="let meal of meals; let i=index" class="meals" (click)="getMealByIndex(meal.idMeal)">
-      <p>{{ i+1 }}</p>
-      <p>{{ meal.strMeal }}</p>
-      <p>{{ meal.idMeal }}</p>
-    </div>
+    <ng-template appMealTable></ng-template>
   </div>
   <div *ngFor="let meal of mealById" class="meal-details">
     <h2>{{ meal.strMeal }}</h2>
